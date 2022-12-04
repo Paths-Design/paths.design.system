@@ -1,0 +1,21 @@
+{
+	"name": "tokens",
+	"author": "Darian Rosebrook",
+	"description": "Design tokens for Paths.Design for use in Figma, Web, iOS, and Android.",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "npm run clean && npm run build:tokens",
+		"build:tokens": "node ./.style-dictionary/config.js",
+		"clean": "rm -rf ./dist",
+		"test:unit": "jest ."
+	},
+	"devDependencies": {
+		"jest": "^27.2.4",
+		"style-dictionary": "^3.0.2"
+	}
+}

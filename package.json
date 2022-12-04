@@ -1,0 +1,23 @@
+{
+	"name": "@workspace/root",
+	"private": false,
+	"workspaces": [
+		"packages/*"
+	],
+	"scripts": {
+		"lerna": "lerna",
+		"bootstrap": "lerna bootstrap",
+		"publish": "lerna publish"
+	},
+	"devDependencies": {
+		"json5": "^2.2.1",
+		"lerna": "^6.1.0",
+		"style-dictionary": "^3.7.1",
+		"style-dictionary-utils": "^1.0.3"
+	},
+	"version": "0.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:darianrosebrook/paths.design.system.git",
+	"author": "d-evyn <hello@darianrosebrook.com>",
+	"license": "none"
+}

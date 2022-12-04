@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+*.env
+*.env.*
+
+test.md 
+
+lerna-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# Ignore built files
+dist
+build
