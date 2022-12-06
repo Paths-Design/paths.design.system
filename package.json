@@ -1,23 +1,27 @@
 {
-	"name": "@workspace/root",
-	"private": false,
+	"name": "paths.design.system",
+	"version": "0.0.0",
+	"private": true,
 	"workspaces": [
+		"components/*",
+		"tokens/*",
+		"tools/*",
 		"packages/*"
 	],
 	"scripts": {
-		"lerna": "lerna",
-		"bootstrap": "lerna bootstrap",
-		"publish": "lerna publish"
+		"build": "turbo run build",
+		"dev": "turbo run dev --parallel",
+		"lint": "turbo run lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
 	},
 	"devDependencies": {
-		"json5": "^2.2.1",
-		"lerna": "^6.1.0",
-		"style-dictionary": "^3.7.1",
-		"style-dictionary-utils": "^1.0.3"
+		"eslint-config-custom": "workspace:*",
+		"prettier": "latest",
+		"turbo": "latest"
 	},
-	"version": "0.0.0",
-	"main": "index.js",
-	"repository": "git@github.com:darianrosebrook/paths.design.system.git",
-	"author": "d-evyn <hello@darianrosebrook.com>",
-	"license": "none"
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"dependencies": {},
+	"packageManager": "pnpm@7.17.1"
 }
